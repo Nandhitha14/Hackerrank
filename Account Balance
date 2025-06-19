@@ -1,0 +1,30 @@
+#include <math.h>
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+#include <assert.h>
+#include <limits.h>
+#include <stdbool.h>
+
+int main() {
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */
+    int am,n,dep,wi;
+    scanf("%d\t%d",&am,&n);
+    switch(n)
+    {
+        case 1:
+            scanf("%d\n",&dep);
+            printf("%d\n",dep+am);
+            break;
+        case 2:
+            scanf("%d\n",&wi);
+            if(wi>am){
+            printf("Insufficient Balance");
+            }
+            break;
+        case 3:
+            printf("Invalid Input");
+
+    }
+    return 0;
+}
