@@ -1,0 +1,27 @@
+#include <math.h>
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+#include <assert.h>
+#include <limits.h>
+#include <stdbool.h>
+
+int main() {
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */
+    int c, r, n, tn, s, e;
+    scanf("%d\n%d\n%d", &r, &c, &n);
+    tn = r*c;
+    s = r+1;
+    e= s+5;
+    if(n>=s && n<=e){
+        printf("It is a mango tree");
+    }
+    else if((n>=tn-2*r+1) && (n<=tn-r)){
+        printf("It is a mango tree");
+    } 
+    else{
+        printf("It is not a mango tree");
+    }
+    
+    return 0;
+}
