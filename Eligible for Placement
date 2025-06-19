@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */   
+    char str[100];
+    int a,cgpa;
+    scanf("%s",str);
+    scanf("%d\t%d",&a,&cgpa);
+    if(a==1 && cgpa > 70){
+        printf("Name of the Student:%s\n",str);
+        printf("%s is Eligible for Placement\n",str);
+    }
+    else if((a==1 || a==2) && cgpa > 75){
+        printf("Name of the Student:%s\n",str);
+        printf("%s is Eligible for Placement\n",str);
+    }
+    else{
+        printf("Name of the Student:%s\n",str);
+        printf("%s is Not Eligible for Placement\n",str);
+    }
+    return 0;
+}
