@@ -1,0 +1,14 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */
+    float b,h,s1,s2,s3;
+    scanf("%f\t%f\t%f\t%f\t%f",&b,&h,&s1,&s2,&s3);
+    printf("Area of Triangle is %.2f\n",0.5*b*h);
+    printf("Perimeter of Triangle is %.2f\n",s1+s2+s3);
+    return 0;
+}
