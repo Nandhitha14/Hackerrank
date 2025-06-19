@@ -1,0 +1,27 @@
+#include <math.h>
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+#include <assert.h>
+#include <limits.h>
+#include <stdbool.h>
+
+int main() {
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */
+    int n, s;
+    scanf("%d", &n);
+    if(n<=9 && n>=1 ){
+        s = n*n;
+        int b = s%10;
+        if(b==n){
+            printf("Automorphic Number");
+        }
+        else{
+            printf("Not Automorphic Number");
+        }
+    }
+    else{
+        printf("Invalid Input");
+    }
+    return 0;
+}
