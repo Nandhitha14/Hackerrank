@@ -1,0 +1,49 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */  
+    int n;
+    scanf("%d",&n);
+    if(n>=0 && n<=9){
+        switch(n){
+            case 0:
+                printf("Integer is %d and String is Zero",n);
+                break;
+            case 1:
+                printf("Integer is %d and String is One",n);
+                break;
+            case 2:
+                printf("Integer is %d and String is Two",n);
+                break;
+            case 3:
+                printf("Integer is %d and String is Three",n);
+                break;
+            case 4:
+                printf("Integer is %d and String is Four",n);
+                break;
+            case 5:
+                printf("Integer is %d and String is Five",n);
+                break;
+            case 6:
+                printf("Integer is %d and String is Six",n);
+                break;
+            case 7:
+                printf("Integer is %d and String is Seven",n);
+                break;
+            case 8:
+                printf("Integer is %d and String is Eight",n);
+                break;
+            case 9:
+                printf("Integer is %d and String is Nine",n);
+                break;           
+        }
+    }
+    else{
+        printf("Invalid Input");
+    }
+    return 0;
+}
