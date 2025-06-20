@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */
+float a,b,c,cp,gain,gainp;
+scanf("%f %f %f",&a,&b,&c);
+cp=a+b;
+gain=c-cp;
+    gainp=(gain/cp)*100;
+    printf("%.2f\n",gainp);
+    return 0;
+}
