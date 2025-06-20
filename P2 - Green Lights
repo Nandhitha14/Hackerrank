@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */ 
+    float speed, distance, time;
+    scanf("%f", &speed);
+    scanf("%f", &distance);
+    scanf("%f", &time);
+    float speed_mps = speed / 3600.0;
+    float time_to_reach = distance / speed_mps;
+    if (time_to_reach < time) {
+        printf("Yes\n");
+    } else {
+        printf("No\n");
+    }
+    return 0;
+}
