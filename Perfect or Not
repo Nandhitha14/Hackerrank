@@ -1,0 +1,28 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */  
+    int n;
+    scanf("%d",&n);
+    int sum=0;
+    int temp=n;
+    for(int i=1;i<n;i++){
+            if(temp%i==0){
+                sum+=i;
+            }
+        }
+    if(sum==n){
+        printf("The Number %.1f is a Perfect Number.",(float)n);
+    }
+    else if(sum!=n && n>0){
+       printf("The Number %.1f is a Not Perfect Number.",(float)n);
+    }
+    else{
+        printf("Invalid Input");
+    }
+    return 0;
+}
