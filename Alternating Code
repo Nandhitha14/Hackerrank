@@ -1,0 +1,38 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+   
+    char str[101];
+    scanf("%s", str);
+
+    char first = '\0', second = '\0';
+    int i = 0;
+
+    while (str[i] != '\0') {
+        if (first == '\0') {
+            first = str[i];
+        } else if (str[i] != first && second == '\0') {
+            second = str[i];
+        } else if (str[i] != first && str[i] != second) {
+            printf("No\n");
+            return 0;
+        }
+        i++;
+    }
+    for (int j = 0; j < i; j++) {
+        if (j % 2 == 0 && str[j] != str[0]) {
+            printf("No\n");
+            return 0;
+        }
+        if (j % 2 == 1 && str[j] != (str[0] == first ? second : first)) {
+            printf("No\n");
+            return 0;
+        }
+    }
+
+    printf("Yes\n");
+    return 0;
+}
