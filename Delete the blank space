@@ -1,0 +1,21 @@
+#include <math.h>
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+#include <assert.h>
+#include <limits.h>
+#include <stdbool.h>
+
+int main() {
+    char str[100];
+    int i;
+    fgets(str,sizeof(str),stdin);
+    for(i=0;str[i]!='\0';i++){
+        int st=str[i];
+        if(st!=32){
+          printf("%c",str[i]);  
+        }
+    }
+    
+    return 0;
+}
